@@ -8,5 +8,6 @@ public class App {
         MenuController controller = new MenuController();
         controller.showMenu();
 //-------------------------------------------------------------------------------
+        System.out.println("\n----------Programa Terminado----------");
     }
 }

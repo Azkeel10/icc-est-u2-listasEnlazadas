@@ -8,6 +8,7 @@ public class LinkedList<T> {
     private int size;
 //-------------------------------------------------------------------------------
     public void appendToTail(T value){
+
         Node<T> newNode = new Node<>(value);
         newNode.setNode(head);
         head = newNode;
@@ -15,21 +16,26 @@ public class LinkedList<T> {
     }
 //-------------------------------------------------------------------------------
     public T findByValue(T value){
+
         Node<T> current = head;
+
         while (current != null) {
+
             if (current.getValue().equals(value)) {
                 return current.getValue();
             }
             current = current.getNode();
         }
+
         return null;
     }
 //-------------------------------------------------------------------------------
     public void deleteByValue(T value){
+
         if (head == null){
             throw new EmptyStackException();
         }
-            
+    
         if (head.getValue().equals(value)) {
             head = head.getNode();
             size--;
@@ -38,7 +44,9 @@ public class LinkedList<T> {
     }
 //-------------------------------------------------------------------------------
     public void print(){
+
         Node<T> aux = head;
+        
         while (aux != null) {
             
             System.out.print(aux.getValue() + " | ");
