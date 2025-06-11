@@ -20,7 +20,7 @@ public class Contact<T,U> {
 //-------------------------------------------------------------------------------
     @Override
     public String toString() {
-        return "\nContact [Nombre=" + name + ", Telefono=" + phone + "]";
+        return "\nContact [Nombre= " + name + ", Telefono= " + phone + "]";
     }
 //-------------------------------------------------------------------------------
 
